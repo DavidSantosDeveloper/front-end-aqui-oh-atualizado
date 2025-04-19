@@ -3,7 +3,7 @@ import { authorization } from "./auth";
 const baseURL = '/api';
 
 export const signin = (body: {name: string, email: string, password: string}) =>
-    POST('/signin', body, null) as Promise<{
+    POST('https://back-end-aqui-oh-atualizado-production.up.railway.app/api/signin', body, null) as Promise<{
         id: string,
         name: string,
         email: string,
@@ -13,10 +13,10 @@ export const signin = (body: {name: string, email: string, password: string}) =>
     }>;
 
 export const signoff = (body: {email: string, password: string}) =>
-    POST('/signoff', body, null) as Promise<void>;
+    POST('https://back-end-aqui-oh-atualizado-production.up.railway.app/api/signoff', body, null) as Promise<void>;
 
 export const login = (body: {email: string, password: string, competencia: true}) =>
-    POST('/login', body, null) as Promise<{
+    POST('https://back-end-aqui-oh-atualizado-production.up.railway.app/api/login', body, null) as Promise<{
         id: string,
         name: string,
         email: string,
@@ -26,7 +26,7 @@ export const login = (body: {email: string, password: string, competencia: true}
     }>;
 
 export const refresh = (refreshToken: string) =>
-    POST('/refresh', {}, refreshToken) as Promise<{
+    POST('https://back-end-aqui-oh-atualizado-production.up.railway.app/api/refresh', {}, refreshToken) as Promise<{
         token_refresh: string,
         token_access: string,
     }>;
