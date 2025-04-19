@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [pluginReact()],
   server: {
     proxy: {
-      '/api': 'https://back-end-aqui-oh-atualizado-production.up.railway.app'
+      '/api': 'http://localhost'
     }
   }
 });
