@@ -15,7 +15,7 @@ const EditarFuncionario: React.FC = () => {
 
         const token_usuario = localStorage.getItem("jwt_access");
         try {
-            const response = await fetch(`http://localhost:3001/api/user/${usuario_atual.id}`, {
+            const response = await fetch(`https://back-end-aqui-oh-atualizado-production.up.railway.app:8080/api/user/${usuario_atual.id}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token_usuario}` // Substitua pelo seu token de acesso, se necessário

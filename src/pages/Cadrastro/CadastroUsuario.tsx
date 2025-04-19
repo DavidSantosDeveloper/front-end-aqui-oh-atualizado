@@ -20,7 +20,7 @@ const CadastroUsuario = () => {
     console.log(usuario_atual)
     console.log(competenciaId)
 
-    const response = await fetch('http://localhost:3001/api/user', {
+    const response = await fetch('https://back-end-aqui-oh-atualizado-production.up.railway.app:8080/api/user', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
