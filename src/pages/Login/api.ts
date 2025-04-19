@@ -1,6 +1,7 @@
 import { authorization } from "./auth";
 
-const baseURL = 'https://back-end-aqui-oh-atualizado-production.up.railway.app';
+// const baseURL = 'https://back-end-aqui-oh-atualizado-production.up.railway.app';
+const baseURL = '';
 
 export const signin = (body: {name: string, email: string, password: string}) =>
     POST('/api/signin', body, null) as Promise<{
