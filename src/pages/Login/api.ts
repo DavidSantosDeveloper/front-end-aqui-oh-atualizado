@@ -16,7 +16,7 @@ export const signoff = (body: {email: string, password: string}) =>
     POST('/api/signoff', body, null) as Promise<void>;
 
 export const login = (body: {email: string, password: string, competencia: true}) =>
-    POST('https://back-end-aqui-oh-atualizado-production.up.railway.app/api/login', body, null) as Promise<{
+    POST('/api/login', body, null) as Promise<{
         id: string,
         name: string,
         email: string,
