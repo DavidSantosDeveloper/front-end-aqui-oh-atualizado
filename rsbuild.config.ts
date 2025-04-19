@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [pluginReact()],
   server: {
     proxy: {
-      '/api': 'back-end-aqui-oh-atualizado-production.up.railway.app:8080'
+      '/api': 'https://back-end-aqui-oh-atualizado-production.up.railway.app'
     }
   }
 });
